@@ -23,3 +23,14 @@ app.use(
     saveUninitialized: false, 
   })
 );
+
+const rutasHome = require("./routes/home.routes");
+
+app.use("/home", rutasHome);
+
+app.use((request, response, next) => {
+    response.status(404);
+    response.send("Error 404: No se encontró la página que buscas :("); 
+  });
+  
+  app.listen(5500);
