@@ -1,0 +1,16 @@
+body {
+    background-color: rgba(255, 255, 255, 0.92);
+    display:flex;
+    align-items: center;
+    height: 100vh;
+}
+
+html{
+    box-sizing: border-box;
+  }
+
+.img_inicio {
+    position: absolute;
+    right: 80px;
+}
+
